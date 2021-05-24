@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "defaultProject": "be-fit",
+  "schematics": {
+    "@nrwl/angular": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
+        "linter": "eslint"
+      },
+      "storybook-configuration": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "scss"
+    }
+  },
+  "projects": {
+    "be-fit": {
+      "projectType": "application",
+      "root": "apps/be-fit",
+      "sourceRoot": "apps/be-fit/src",
+      "prefix": "free-thinkers",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/be-fit",
+            "index": "apps/be-fit/src/index.html",
+            "main": "apps/be-fit/src/main.ts",
+            "polyfills": "apps/be-fit/src/polyfills.ts",
+            "tsConfig": "apps/be-fit/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": ["apps/be-fit/src/favicon.ico", "apps/be-fit/src/assets"],
+            "styles": ["apps/be-fit/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/be-fit/src/environments/environment.ts",
+                  "with": "apps/be-fit/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "be-fit:build:production"
+            },
+            "development": {
+              "browserTarget": "be-fit:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "be-fit:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/be-fit/src/**/*.ts",
+              "apps/be-fit/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/be-fit"],
+          "options": {
+            "jestConfig": "apps/be-fit/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "be-fit-e2e": {
+      "root": "apps/be-fit-e2e",
+      "sourceRoot": "apps/be-fit-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/be-fit-e2e/cypress.json",
+            "tsConfig": "apps/be-fit-e2e/tsconfig.e2e.json",
+            "devServerTarget": "be-fit:serve:development"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "be-fit:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/be-fit-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    }
+  }
+}
