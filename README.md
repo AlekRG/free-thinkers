@@ -106,4 +106,5 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 # Collaborator
 - Aleksandar Grujicic
+- Bojan Smudja
 
