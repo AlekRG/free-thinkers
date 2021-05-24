@@ -108,6 +108,5 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - Aleksandar Grujicic
 - Bojan Smudja
 - Ljubica Joksimovic
-
 - Hana Despotovic Hasanbegovic
 - Veljko Popovic
