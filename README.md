@@ -109,3 +109,4 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - Bojan Smudja
 - Ljubica Joksimovic
 
+- Hana Despotovic Hasanbegovic
