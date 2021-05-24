@@ -110,3 +110,4 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 - Ljubica Joksimovic
 
 - Hana Despotovic Hasanbegovic
+- Veljko Popovic
