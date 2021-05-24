@@ -19,8 +19,8 @@ export class AppComponent {
         index: 0,
       },
       {
-        label: 'Second',
-        link: './second',
+        label: 'Shopping',
+        link: './shoppingSection',
         index: 1,
       },
       {
