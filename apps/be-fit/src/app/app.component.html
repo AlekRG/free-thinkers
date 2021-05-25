@@ -1,8 +1,68 @@
 <div fxFlexFill fxLayout="column">
   <div fxFlex="none">
     <mat-toolbar color="primary">
-      <span>Bee Fit</span>
+      <a routerLink="/shoppingSection" style="height: inherit"
+        ><img src="../assets/logo.png" alt="Bee Fit" style="height: inherit"
+      /></a>
     </mat-toolbar>
+  </div>
+  <div style="padding: 5px">
+    <div fxFlex="1 1 auto" fxLayout="row" fxLayoutGap="5px">
+      <div fxFlex="1 1 auto">
+        <img
+          src="../assets/user 1 Ljubica.jpg"
+          alt="Bee Fit"
+          style="
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          "
+        />
+        <span style="padding: 0 5px; font-size: 23px; vertical-align: middle"
+          >Ljubica</span
+        >
+      </div>
+      <div fxFlex="1 1 auto">
+        <div
+          fxFlex="1 1 auto"
+          fxLayout="row"
+          fxLayoutGap="5px"
+          style="align-items: center"
+        >
+          <div>
+            <a routerLink="/stepsHistory" style="height: inherit">
+              <img
+                src="../assets/running.png"
+                alt="My Steps:"
+                style="height: 25px; width: 25px; vertical-align: middle"
+              />
+            </a>
+            <span
+              style="padding: 0 5px; font-size: 23px; vertical-align: middle"
+              >{{ dataSum.steps }}</span
+            >
+          </div>
+          <div>
+            <a
+              routerLink="/tokensHistory"
+              style="height: inherit; margin: auto"
+            >
+              <img
+                src="../assets/wallet.png"
+                alt="My Tokens:"
+                style="height: 25px; width: 25px; vertical-align: middle"
+              />
+            </a>
+            <span
+              style="padding: 0 5px; font-size: 23px; vertical-align: middle"
+              >{{ dataSum.tokens.toFixed() }}</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div fxFlex="auto" class="content-wrap"><router-outlet></router-outlet></div>
   <div fxFlex="none">
@@ -12,7 +72,6 @@
       fxLayout="column"
     >
       <a
-        fxFlex="auto"
         mat-tab-link
         *ngFor="let link of navLinks"
         [routerLink]="link.link"
@@ -20,7 +79,11 @@
         #rla="routerLinkActive"
         [active]="rla.isActive"
       >
-        {{ link.label }}
+        <img
+          [src]="link.img"
+          [alt]="link.label"
+          style="height: 100%; width: auto"
+        />
       </a>
     </nav>
   </div>

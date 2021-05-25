@@ -10,11 +10,19 @@ import { ShoppingSectionComponent } from './shoppingSection/shoppingSection.comp
 import { GalleryComponent } from './gallery/gallery.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { StepsHistoryComponent } from './stepsHistory/stepsHistory.component';
+import { TokensHistoryComponent } from './tokensHistory/tokensHistory.component';
 import { HighscoresComponent } from './highscores/highscores.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
@@ -22,6 +30,8 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     ShoppingSectionComponent,
     GalleryComponent,
+    StepsHistoryComponent,
+    TokensHistoryComponent,
     HighscoresComponent,
   ],
   imports: [
@@ -33,10 +43,16 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     AppRoutingModule,
     FlexLayoutModule,
+    NgxChartsModule,
     MatIconModule,
     MatListModule,
     MatButtonToggleModule,
     MatButtonModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
