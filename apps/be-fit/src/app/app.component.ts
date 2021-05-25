@@ -83,13 +83,13 @@ export class AppComponent implements OnInit {
         index: 0,
       },
       {
-        label: 'Second',
-        link: './second',
+        label: 'Shopping',
+        link: './shoppingSection',
         index: 1,
       },
       {
-        label: 'Third',
-        link: './third',
+        label: 'High Scores',
+        link: './highscores',
         index: 2,
       },
       {

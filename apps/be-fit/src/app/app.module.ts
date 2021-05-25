@@ -3,35 +3,43 @@ import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
+import { ShoppingSectionComponent } from './shoppingSection/shoppingSection.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { Componenet2Component } from './componenet2/componenet2.component';
-import { Componenet3Component } from './componenet3/componenet3.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { StepsHistoryComponent } from './stepsHistory/stepsHistory.component';
 import { TokensHistoryComponent } from './tokensHistory/tokensHistory.component';
+import { HighscoresComponent } from './highscores/highscores.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ShoppingSectionComponent,
     GalleryComponent,
-    Componenet2Component,
-    Componenet3Component,
     StepsHistoryComponent,
     TokensHistoryComponent,
+    HighscoresComponent,
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
+    MatGridListModule,
     MatTabsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FlexLayoutModule,
     NgxChartsModule,
+    MatIconModule,
+    MatListModule,
+    MatButtonToggleModule,
     MatButtonModule,
   ],
   providers: [],
