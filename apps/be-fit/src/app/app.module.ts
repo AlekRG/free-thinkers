@@ -10,9 +10,6 @@ import { ShoppingSectionComponent } from './shoppingSection/shoppingSection.comp
 import { GalleryComponent } from './gallery/gallery.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { StepsHistoryComponent } from './stepsHistory/stepsHistory.component';
-import { TokensHistoryComponent } from './tokensHistory/tokensHistory.component';
 import { HighscoresComponent } from './highscores/highscores.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -30,8 +27,6 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     ShoppingSectionComponent,
     GalleryComponent,
-    StepsHistoryComponent,
-    TokensHistoryComponent,
     HighscoresComponent,
   ],
   imports: [
@@ -43,7 +38,6 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     AppRoutingModule,
     FlexLayoutModule,
-    NgxChartsModule,
     MatIconModule,
     MatListModule,
     MatButtonToggleModule,
