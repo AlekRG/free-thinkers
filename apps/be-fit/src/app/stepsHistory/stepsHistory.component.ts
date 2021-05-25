@@ -11,4 +11,8 @@ export class StepsHistoryComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  onDateChanged() {
+    console.log('dtae changed');
+  }
 }

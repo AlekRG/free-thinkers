@@ -81,21 +81,25 @@ export class AppComponent implements OnInit {
         label: 'First',
         link: './first',
         index: 0,
+        img: '../assets/community.png',
       },
       {
         label: 'Shopping',
         link: './shoppingSection',
         index: 1,
+        img: '../assets/cart.png',
       },
       {
         label: 'High Scores',
         link: './highscores',
         index: 2,
+        img: '../assets/rank.png',
       },
       {
         label: 'Fourth',
         link: './fourth',
         index: 3,
+        img: '../assets/settings.png',
       },
     ];
   }
