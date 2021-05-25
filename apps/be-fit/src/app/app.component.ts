@@ -24,8 +24,8 @@ export class AppComponent {
         index: 1,
       },
       {
-        label: 'Third',
-        link: './third',
+        label: 'High Scores',
+        link: './highscores',
         index: 2,
       },
       {
