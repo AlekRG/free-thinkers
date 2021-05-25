@@ -1,32 +1,62 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>High Scores</span>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-<!-- <div fxLayout fxLayoutAlign="center center">
-  <mat-button-toggle-group #group="matButtonToggleGroup">
-    <mat-button-toggle value="DAILY"> Daily </mat-button-toggle>
-    <mat-button-toggle value="MONTHLY"> Monthly </mat-button-toggle>
-    <mat-button-toggle value="YEAERLY"> Yearly </mat-button-toggle>
-    <mat-button-toggle value="ALL_TIME"> All Time </mat-button-toggle>
-  </mat-button-toggle-group>
-</div> -->
-<mat-list>
-  <mat-list-item *ngFor="let score of scores">
-    <div fxLayout="row" fxLayoutAlign="start center" style="width: 100%">
-      <div style="padding-right: 10px">{{ score.rank | number }}.</div>
-      <div style="padding-right: 10px">
-        <img mat-list-avatar [src]="score.image" />
-      </div>
-      <div fxFlex="auto">
-        {{ score.name }}
-      </div>
-      <div>{{ score.count | number }}</div>
-    </div>
-    <!-- <mat-icon matListAvatar iconAvatar color="primary">person</mat-icon>
-    <div mat-line>{{ score.name }}</div>
-    <div mat-line>#{{ score.rank | number }}</div>
-    <div>{{ score.count | number }}</div> -->
-  </mat-list-item>
-</mat-list>
+<mat-tab-group>
+  <mat-tab label="Week">
+    <mat-list class="list">
+      <mat-list-item *ngFor="let score of scores" class="item">
+        <div fxLayout="row" fxLayoutAlign="start center" style="width: 100%">
+          <div class="rank">{{ score.rank | number }}.</div>
+          <div class="avatar">
+            <img mat-list-avatar [src]="score.image" />
+          </div>
+          <div fxFlex="auto">
+            {{ score.name }}
+          </div>
+          <mat-icon color="error" *ngIf="score.trend === 0">
+            arrow_downward
+          </mat-icon>
+          <mat-icon *ngIf="score.trend === 1"> arrow_upward </mat-icon>
+          <div>{{ score.count | number }}</div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+  <mat-tab label="Month">
+    <mat-list class="list">
+      <mat-list-item *ngFor="let score of scores" class="item">
+        <div fxLayout="row" fxLayoutAlign="start center" style="width: 100%">
+          <div class="rank">{{ score.rank | number }}.</div>
+          <div class="avatar">
+            <img mat-list-avatar [src]="score.image" />
+          </div>
+          <div fxFlex="auto">
+            {{ score.name }}
+          </div>
+          <mat-icon color="error" *ngIf="score.trend === 0">
+            arrow_downward
+          </mat-icon>
+          <mat-icon *ngIf="score.trend === 1"> arrow_upward </mat-icon>
+          <div>{{ score.count | number }}</div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+  <mat-tab label="All Times">
+    <mat-list class="list">
+      <mat-list-item *ngFor="let score of scores" class="item">
+        <div fxLayout="row" fxLayoutAlign="start center" style="width: 100%">
+          <div class="rank">{{ score.rank | number }}.</div>
+          <div class="avatar">
+            <img mat-list-avatar [src]="score.image" />
+          </div>
+          <div fxFlex="auto">
+            {{ score.name }}
+          </div>
+          <mat-icon color="error" *ngIf="score.trend === 0">
+            arrow_downward
+          </mat-icon>
+          <mat-icon *ngIf="score.trend === 1"> arrow_upward </mat-icon>
+          <div>{{ score.count | number }}</div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+</mat-tab-group>
