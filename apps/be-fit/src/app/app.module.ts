@@ -34,6 +34,7 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule,
     MatToolbarModule,
     MatGridListModule,
+    MatCardModule,
     MatTabsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
