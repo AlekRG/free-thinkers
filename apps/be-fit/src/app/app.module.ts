@@ -5,7 +5,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { Componenet1Component } from './componenet1/componenet1.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { Componenet2Component } from './componenet2/componenet2.component';
 import { Componenet3Component } from './componenet3/componenet3.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,11 +13,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { StepsHistoryComponent } from './stepsHistory/stepsHistory.component';
 import { TokensHistoryComponent } from './tokensHistory/tokensHistory.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Componenet1Component,
+    GalleryComponent,
     Componenet2Component,
     Componenet3Component,
     StepsHistoryComponent,
@@ -31,6 +32,7 @@ import { TokensHistoryComponent } from './tokensHistory/tokensHistory.component'
     AppRoutingModule,
     FlexLayoutModule,
     NgxChartsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
