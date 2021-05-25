@@ -3,5 +3,6 @@ export interface GalleryItem {
     caption?: string,
     user_pic?:string,
     user_name?:string,
-    date?: string
+    date?: string,
+    description?: string
 }
