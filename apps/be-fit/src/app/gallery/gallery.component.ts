@@ -37,50 +37,68 @@ export class GalleryComponent implements OnInit {
 function loadGallery(): GalleryItem[] {
   return [{
     src: '../../assets/gallery/walking1.jpg',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 1 Ljubica.jpg',
+    user_name: 'Ljubica',
+    date: '25 May 2021',
   },
   {
     src: '../../assets/gallery/walking2.jpg',
-    caption: 'This is a really long string to see how the text will overflow',
+    user_pic: '/assets/user 2 Aleksandar.jpg',
+    user_name: 'Aleksandar',
+    date: '25 May 2021',
   },
   {
     src: '../../assets/gallery/walking3.jpg',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 3 Hana.jpg',
+    user_name: 'Hana',
+    date: '24 May 2021',
   },
   {
     src: '../../assets/gallery/walking4.jpg',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 4 Veljko.jpg',
+    user_name: 'Veljko',
+    date: '24 May 2021',
   },
   {
     src: '../../assets/gallery/walking5.jpg',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 1 Ljubica.jpg',
+    user_name: 'Ljubica',
+    date: '23 May 2021',
   },
   {
     src: '../../assets/gallery/walking6.jpg',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 2 Aleksandar.jpg',
+    user_name: 'Aleksandar',
+    date: '22 May 2021',
   },
   {
     src: '../../assets/gallery/walking7.jpg',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 3 Hana.jpg',
+    user_name: 'Hana',
+    date: '22 May 2021',
   },
   {
     src: '../../assets/gallery/walking8.jpg',
-    caption: 'It\'s a thing',
-  },
-  {
-    src: '../../assets/gallery/walking9.png',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 4 Veljko.jpg',
+    user_name: 'Veljko',
+    date: '21 May 2021',
   },
   {
     src: '../../assets/gallery/walking10.png',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 1 Ljubica.jpg',
+    user_name: 'Ljubica',
+    date: '21 May 2021',
   },
   {
     src: '../../assets/gallery/walking11.png',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 1 Ljubica.jpg',
+    user_name: 'Ljubica',
+    date: '20 May 2021',
   },{
     src: '../../assets/gallery/walking12.png',
-    caption: 'It\'s a thing',
+    user_pic: '/assets/user 1 Ljubica.jpg',
+    user_name: 'Ljubica',
+    date: '20 May 2021',
   },];
 }
  

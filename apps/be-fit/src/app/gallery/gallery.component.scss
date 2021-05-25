@@ -26,45 +26,24 @@
 
 #gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center; 
-  padding-top: 2%;
+  background-color: rgb(209, 209, 209);
 }
 
-.image-item{
-  width: 95%;
-  height: 95%;
-  object-fit: cover;
-  backface-visibility: hidden;
-  transition: 0.5ms;
-  z-index:2;
+.example-header-image {
+  background-size: cover;
 }
 
-.img-wrap {
-  position: relative;
-  width: 100%;
-  z-index:2;
-  height: 100%;
+.example-card{
+  margin-top: 8px;
 }
-
-.img-description{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  // transform: translate(-50%,-50%);
-  // -ms-transform: translate(-50%,-50%);
-  opacity: 0;
-  transition: 0.5ms;
-  z-index:2;
-  font-size: 8px;
- }
-
- .img-wrap:hover>.image-item{
-  opacity: 0.4; 
- }
- .img-wrap:hover > .img-description > p{
-  position: absolute;
-  opacity: 1; 
-  background-color: red;
- }
-
+.avatar {
+  padding-right: 10px;
+  > img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

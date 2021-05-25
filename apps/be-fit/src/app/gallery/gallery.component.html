@@ -1,10 +1,24 @@
 <div id="gallery">
-  <div class="img-wrap" *ngFor="let image of gallery">
+  <!-- <div class="img-wrap" *ngFor="let image of gallery">
     <img class="image-item" src="{{image.src}}" >
     <div  class="img-description"> 
       <p>This image looks super neat.</p>
     </div>  
+  </div> -->
+  <div *ngFor="let image of gallery">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar  class="avatar">
+            <img [src]="image.user_pic" />
+        </div>
+        <mat-card-title>{{image.user_name}}</mat-card-title>
+        <mat-card-subtitle>{{image.date}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{image.src}}" alt="Photo of a Shiba Inu">
+    </mat-card>
   </div>
+  
+  
 </div>
 <div class="fab-container">
   <button mat-fab class="fab-toggler" (click)="fileInput.click()"
