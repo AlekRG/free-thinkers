@@ -11,3 +11,11 @@
 .content-wrap {
   overflow: auto;
 }
+
+.round-image {
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}

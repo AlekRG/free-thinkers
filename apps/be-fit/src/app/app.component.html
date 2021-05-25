@@ -1,9 +1,31 @@
 <div fxFlexFill fxLayout="column">
   <div fxFlex="none">
-    <mat-toolbar color="primary">
-      <a routerLink="/shoppingSection" style="height: inherit"
-        ><img src="../assets/logo.png" alt="Bee Fit" style="height: inherit"
-      /></a>
+    <mat-toolbar color="primary" fxLayout="row">
+      <div fxFlex="auto" fxLayoutAlign="start">
+        <a routerLink="/first" style="vertical-align: middle"
+          ><img
+            src="../assets/logo - Copy.png"
+            alt="Bee Fit"
+            class="round-image"
+        /></a>
+      </div>
+      <div fxFlex="auto" fxLayoutAlign="center">
+        <a routerLink="/shoppingSection">
+          <img
+            src="../assets/running.png"
+            alt="My Steps:"
+            style="height: 25px; width: 25px; vertical-align: middle"
+          />
+        </a>
+        <span style="font-size: 23px; vertical-align: middle">123456</span>
+      </div>
+      <div fxFlex="auto" fxLayoutAlign="end">
+        <img
+          src="../assets/user 1 Ljubica.jpg"
+          alt="Bee Fit"
+          class="round-image"
+        />
+      </div>
     </mat-toolbar>
   </div>
   <div fxFlex="auto" class="content-wrap"><router-outlet></router-outlet></div>
