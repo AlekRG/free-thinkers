@@ -72,6 +72,7 @@
       fxLayout="column"
     >
       <a
+        fxFlex="auto"
         mat-tab-link
         *ngFor="let link of navLinks"
         [routerLink]="link.link"
@@ -79,11 +80,7 @@
         #rla="routerLinkActive"
         [active]="rla.isActive"
       >
-        <img
-          [src]="link.img"
-          [alt]="link.label"
-          style="height: 100%; width: auto"
-        />
+        <img [src]="link.img" [alt]="link.label" style="height: 45px" />
       </a>
     </nav>
   </div>
