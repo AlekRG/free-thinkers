@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,71 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  readonly conversion = 15000;
+  readonly dataDaily = [
+    {
+      date: new Date('03.12.2021'),
+      steps: 14000,
+      tokens: 14000 / this.conversion,
+    },
+    {
+      date: new Date('03.13.2021'),
+      steps: 12000,
+      tokens: 12000 / this.conversion,
+    },
+    {
+      date: new Date('03.15.2021'),
+      steps: 13123,
+      tokens: 13123 / this.conversion,
+    },
+    {
+      date: new Date('03.16.2021'),
+      steps: 8200,
+      tokens: 8200 / this.conversion,
+    },
+  ];
+  readonly dataChartSteps = [
+    {
+      name: new Date('03.12.2021'),
+      value: 14000,
+    },
+    {
+      name: new Date('03.13.2021'),
+      value: 12000,
+    },
+    {
+      name: new Date('03.15.2021'),
+      value: 13123,
+    },
+    {
+      name: new Date('03.16.2021'),
+      value: 8200,
+    },
+  ];
+  readonly dataChartTokens = [
+    {
+      name: new Date('03.12.2021').toDateString(),
+      value: 14000 / this.conversion,
+    },
+    {
+      name: new Date('03.13.2021').toDateString(),
+      value: 12000 / this.conversion,
+    },
+    {
+      name: new Date('03.15.2021').toDateString(),
+      value: 13123 / this.conversion,
+    },
+    {
+      name: new Date('03.16.2021').toDateString(),
+      value: 8200 / this.conversion,
+    },
+  ];
+  readonly dataSum = {
+    steps: 14000 + 1200 + 13123 + 8200,
+    tokens: (14000 + 1200 + 13123 + 8200) / this.conversion,
+  };
+
   title = 'angular-material-tab-router';
   navLinks: any[];
   activeLinkIndex = -1;

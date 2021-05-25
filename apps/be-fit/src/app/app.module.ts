@@ -10,6 +10,9 @@ import { Componenet2Component } from './componenet2/componenet2.component';
 import { Componenet3Component } from './componenet3/componenet3.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { StepsHistoryComponent } from './stepsHistory/stepsHistory.component';
+import { TokensHistoryComponent } from './tokensHistory/tokensHistory.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     Componenet1Component,
     Componenet2Component,
     Componenet3Component,
+    StepsHistoryComponent,
+    TokensHistoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +30,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     AppRoutingModule,
     FlexLayoutModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

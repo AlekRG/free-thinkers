@@ -1,9 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@use '~@angular/material' as mat;
+// @import '~@angular/material/prebuilt-themes/purple-green.css';
+$custom-primary-palette: (
+  50: #e4f9ea,
+  100: #bdeecb,
+  200: #8fe3aa,
+  300: #56d986,
+  400: #00cf6a,
+  500: #00c551,
+  600: #00b547,
+  700: #00a23b,
+  800: #009030,
+  900: #00701b,
+  contrast: (),
+);
+$custom-accent-palette: (
+  50: #f4e7e4,
+  100: #eec8b5,
+  200: #e4a686,
+  300: #d98656,
+  400: #d26f31,
+  500: #cd5a00,
+  600: #c35500,
+  700: #b74e00,
+  800: #aa4700,
+  900: #933a00,
+  contrast: (),
+);
+$custom-warn-palette: (
+  50: #fae7eb,
+  100: #f4c2ce,
+  200: #ed9caf,
+  300: #e67991,
+  400: #df637b,
+  500: #d95667,
+  600: #c85164,
+  700: #b24b5e,
+  800: #9c4559,
+  900: #753c4e,
+  contrast: (),
+);
+$my-primary: mat.define-palette($custom-primary-palette, 300);
+$my-accent: mat.define-palette($custom-accent-palette);
+
+// The "warn" palette is optional and defaults to red if not specified.
+$my-warn: mat.define-palette($custom-warn-palette);
+
+$my-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      accent: $my-accent,
+      warn: $my-warn,
+    ),
+  )
+);
+@include mat.all-component-themes($my-theme);
 
 example-fill-remaining-space {
-  /* This fills the remaining space, by using flexbox. 
+  /* This fills the remaining space, by using flexbox.
        Every toolbar row uses a flexbox row layout. */
   flex: 1 1 auto;
 }
