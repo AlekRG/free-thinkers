@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { ShoppingSectionComponent } from './shoppingSection/shoppingSection.component';
@@ -27,6 +28,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     MatToolbarModule,
     MatGridListModule,
+    MatCardModule,
     MatTabsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
