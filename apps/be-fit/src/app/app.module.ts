@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
+import { ShoppingSectionComponent } from './shoppingSection/shoppingSection.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { Componenet2Component } from './componenet2/componenet2.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HighscoresComponent } from './highscores/highscores.component';
@@ -18,13 +19,14 @@ import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
+    ShoppingSectionComponent,
     GalleryComponent,
-    Componenet2Component,
     HighscoresComponent,
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
+    MatGridListModule,
     MatTabsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
