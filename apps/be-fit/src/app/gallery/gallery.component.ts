@@ -16,6 +16,22 @@ export class GalleryComponent implements OnInit {
     this.gallery = loadGallery();
   }
 
+  onSelectFile($event:any) { // called each time file input changes
+    console.log($event);
+    
+    if ($event.target && $event.target.files && $event.target.files[0]) {
+      let reader = new FileReader();
+
+      reader.readAsDataURL($event.target.files[0]); // read file as data url
+
+      reader.onload = (event) => { // called once readAsDataURL is completed
+        this.gallery.unshift({src:event?.target?.result});
+        console.log();
+        
+      }
+    }
+}
+
 }
 
 function loadGallery(): GalleryItem[] {

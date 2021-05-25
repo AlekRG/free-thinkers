@@ -1,4 +1,4 @@
 export interface GalleryItem {
-    src: string,
+    src: any,
     caption?: string
 }
