@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'free-thinkers-root',
@@ -8,10 +9,11 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'angular-material-tab-router';
+  steps = 0;
   navLinks: any[];
   activeLinkIndex = -1;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private dataService: DataService) {
     this.navLinks = [
       {
         label: 'First',
@@ -45,5 +47,6 @@ export class AppComponent implements OnInit {
         this.navLinks.find((tab) => tab.link === '.' + this.router.url)
       );
     });
+    this.dataService.dataSubject.subscribe((steps) => (this.steps = steps));
   }
 }

@@ -21,6 +21,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,11 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatGridListModule,
     MatCardModule,
+    MatStepperModule,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
     MatTabsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
