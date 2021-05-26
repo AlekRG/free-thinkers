@@ -8,19 +8,18 @@
           [src]="shop.image"
           alt="Photo of a Shiba Inu"
         />
-        <mat-card-actions fxFlex style="width: 100%; background-color: #2f3061">
+        <mat-card-actions fxFlex style="width: 100%; ">
           <div
-            fxFill
             fxLayout="row"
-            fxLayoutAlign="start center"
+            fxLayoutAlign="space-around center"
             style="width: 100%"
           >
             <button
               mat-button
               (click)="onBuy(shop.name)"
-              style="width: 100%; font-size: 20px; color: white"
+              style="color: white;background-color: #2f3061"
             >
-              BUY
+              Buy
             </button>
           </div>
         </mat-card-actions>
