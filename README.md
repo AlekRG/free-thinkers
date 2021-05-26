@@ -3,13 +3,20 @@
 # **Solution Name: Bee FIT**
 
 HEALTH
+
  < LIFESTYLE 
+ 
     < CARRING
+    
        <FITNESS
+       
           APPLICATION 
 
-                Bee FIT is a gamification & shopping responsive web app connected with major mobile health apps (Goggle, Apple, Samsung, Huawei) with the idea to summarize & track spent energy and convert it to discounts, promo coupons or donate to charities through sponsors. It helps people stay active and healthy and promote sustainable work pace and corporate responsibility.
-                 Mre active lifestyle => healthy employee, better productivity, impact on enviroment.
+                Bee FIT is a gamification & shopping responsive web app connected with major mobile health apps (Goggle, Apple, Samsung, Huawei) with the idea to summarize & track spent energy and convert it to discounts, promo coupons or donate to charities through sponsors. 
+                
+                It helps people stay active and healthy and promote sustainable work pace and corporate responsibility.
+                
+                More active lifestyle => healthy employee, better productivity, impact on enviroment.
 
 # **Solution Features**
 
