@@ -25,7 +25,6 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { AddItemComponent } from './gallery/add-item/add-item.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,6 @@ import { AddItemComponent } from './gallery/add-item/add-item.component';
     ShoppingSectionComponent,
     GalleryComponent,
     HighscoresComponent,
-    AddItemComponent,
   ],
   imports: [
     BrowserModule,
