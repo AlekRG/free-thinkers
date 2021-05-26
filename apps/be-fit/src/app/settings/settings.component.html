@@ -1,0 +1,13 @@
+<div id="gallery">
+  <div *ngFor="let image of apps">
+    <mat-card class="example-card">
+      <img mat-card-image src="{{image.src}}" alt="Photo of a Shiba Inu">
+      <mat-card-content style="display: grid;justify-content: center;">
+         <!-- <p>{{image.name}}</p>  -->
+         <button mat-raised-button color="accent" (click)="showDialog()">Connect</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+  
+</div>

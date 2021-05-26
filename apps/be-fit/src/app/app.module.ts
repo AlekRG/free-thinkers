@@ -25,6 +25,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SettingsComponent } from './settings/settings.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ShoppingSectionComponent,
     GalleryComponent,
     HighscoresComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatInputModule,
     MatNativeDateModule,
     CommonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
