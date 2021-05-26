@@ -1,39 +1,52 @@
-**Team Name: Free Thinkers 2**
+# **Team Name: Free Thinkers 2**
 
-**Solution Name: Bee FIT**
+# **Solution Name: Bee FIT**
+
 HEALTH
  < LIFESTYLE 
     < CARRING
        <FITNESS
           APPLICATION 
-Bee FIT is a gamification & shopping responsive web app connected with major mobile health apps (Goggle, Apple, Samsung, Huawei) with the idea to summarize & track spent energy and convert it to discounts, promo coupons or donate to charities through sponsors. It helps people stay active and healthy and promote sustainable work pace and corporate responsibility.
 
-**Solution Features**
+                Bee FIT is a gamification & shopping responsive web app connected with major mobile health apps (Goggle, Apple, Samsung, Huawei) with the idea to summarize & track spent energy and convert it to discounts, promo coupons or donate to charities through sponsors. It helps people stay active and healthy and promote sustainable work pace and corporate responsibility.
+                 Mre active lifestyle => healthy employee, better productivity, impact on enviroment.
 
-Login to App
+# **Solution Features**
+
+                Login to App (settings):
+                
 Select from connected apps (Google, Apple, Samsung, Huiawei)
-Main screen: 
-Bee FIT logo (back to main screen)
-User statistics (steps or tokens ballance)
-Shopping area:
-All available promo codes, shops and charities for loged user
-After selection of shop, offerings activated accoring to available ballance
-Selection of desired item and purchase
-Wallet for purchased items (bar code, confirmation, thank you note, promo code)
-Community wall
-Pictures upoaded from users doing activity
-Rank
-User current position, trends and how much progress is to the next level
 
-**Why it's cool**
+                Main screen: 
+                
+Bee FIT logo (back to main screen)               
+                
+User statistics (steps or tokens ballance)
+                
+                 Shopping area:
+                
+All available promo codes, shops and charities for loged user;
+After selection of shop, offerings activated accoring to available ballance;
+Selection of desired item and purchase;
+Sent by email in this phase of project;
+
+                Community wall:
+                
+Pictures upoaded from users doing activity;
+                
+                Rank:
+                
+User current position, trends and how much progress is to the next level.
+
+# **Why it's cool**
   
  Combinig health, lifestyle, community and gamification all for a purpose of having active lifestyle.
  
-**WOW*
+# **WOW**
   
- It is actually working :)
+ It is actually working :) We will show it to you on demonstartion.
 
-**Technologies and architecture used**
+# **Technologies and architecture used**
 
 This project was generated using [Nx](https://nx.dev).
 
