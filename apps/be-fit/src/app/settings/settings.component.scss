@@ -1,0 +1,12 @@
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+    background-color: rgb(209, 209, 209);
+  }
+  
+  
+  .example-card{
+    margin: 8px;
+  }

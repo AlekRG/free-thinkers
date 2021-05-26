@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Componenet4Component } from './componenet4.component';
+import { SettingsComponent } from './settings.component';
 
-describe('Componenet4Component', () => {
-  let component: Componenet4Component;
-  let fixture: ComponentFixture<Componenet4Component>;
+describe('SettingsComponent', () => {
+  let component: SettingsComponent;
+  let fixture: ComponentFixture<SettingsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [Componenet4Component],
+      declarations: [SettingsComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Componenet4Component);
+    fixture = TestBed.createComponent(SettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

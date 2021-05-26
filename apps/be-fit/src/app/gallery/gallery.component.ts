@@ -46,7 +46,7 @@ function loadGallery(): GalleryItem[] {
     user_pic: '/assets/user 2 Aleksandar.jpg',
     user_name: 'Aleksandar',
     date: 'May 25 2021',
-    description: 'After a day’s walk, everything has twice its usual value.<br>George Macauley Trevelyan'
+    description: 'After a day’s walk, everything has twice its usual value. George Macauley Trevelyan'
   },
   {
     src: '../../assets/gallery/walking3.jpg',
